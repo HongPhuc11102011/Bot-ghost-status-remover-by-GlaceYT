@@ -23,21 +23,7 @@ const path = require('path');
 
 const client = new Client({
   intents: [
-    GatewayIntentBits.Guilds
-  ],
-});
-
-const app = express();
-const port = 3000;
-app.get('/', (req, res) => {
-  const imagePath = path.join(__dirname, 'index.html');
-  res.sendFile(imagePath);
-});
-app.listen(port, () => {
-  console.log('\x1b[36m[ SERVER ]\x1b[0m', '\x1b[32m SH : http://localhost:' + port + ' ✅\x1b[0m');
-});
-
-const statusMessages = ["🎧 Listening to Spotify", "🎮 Playing VALORANT"];
+    GatewayInteSad"];
 const statusTypes = [ 'dnd', 'idle'];
 let currentStatusIndex = 0;
 let currentTypeIndex = 0;
